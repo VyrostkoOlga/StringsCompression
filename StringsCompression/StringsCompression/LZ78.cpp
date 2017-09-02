@@ -49,7 +49,7 @@ string* LZ78:: extractFromFactor(size_t factorIdx) {
     if (!factor->first) {
         return new string(&factor->second);
     }
-    return new string(this->extractFromFactor(factor->first)->append(1, factor->second));
+    return new string(this->extractFromFactor(factor->first - 1)->append(1, factor->second));
 }
 
 size_t LZ78::findExistingFactor(string* str, size_t start, size_t count) {

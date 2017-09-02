@@ -1,6 +1,6 @@
 //
 //  main.cpp
-//  1
+//
 //
 //  Created by Olga Vyrostko on 02.09.17.
 //  Copyright © 2017 OlgaVyrostko. All rights reserved.
@@ -12,7 +12,13 @@
 int test(std::string input);
 
 int main(int argc, const char * argv[]) {
-    test("abab");
+    //test("abab");
+    std::cout<<"\n";
+    //test("abc");
+    std::cout<<"\n";
+    //test("abab");
+    std::cout<<"\n";
+    test("ababab");
     return 0;
 }
 

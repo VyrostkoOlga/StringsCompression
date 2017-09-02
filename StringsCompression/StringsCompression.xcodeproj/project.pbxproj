@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C9711E211F5A751F00DBF923 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9711E201F5A751F00DBF923 /* main.cpp */; };
+		C9711E2A1F5A75CB00DBF923 /* LZ78.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9711E281F5A75CB00DBF923 /* LZ78.cpp */; };
+		C9711E411F5A8DF400DBF923 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9711E401F5A8DF400DBF923 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +25,9 @@
 
 /* Begin PBXFileReference section */
 		C9711E1D1F5A751F00DBF923 /* StringsCompression */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StringsCompression; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9711E201F5A751F00DBF923 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C9711E281F5A75CB00DBF923 /* LZ78.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LZ78.cpp; sourceTree = "<group>"; };
+		C9711E291F5A75CB00DBF923 /* LZ78.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LZ78.hpp; sourceTree = "<group>"; };
+		C9711E401F5A8DF400DBF923 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +60,19 @@
 		C9711E1F1F5A751F00DBF923 /* StringsCompression */ = {
 			isa = PBXGroup;
 			children = (
-				C9711E201F5A751F00DBF923 /* main.cpp */,
+				C9711E271F5A75AF00DBF923 /* LZ78 */,
 			);
 			path = StringsCompression;
+			sourceTree = "<group>";
+		};
+		C9711E271F5A75AF00DBF923 /* LZ78 */ = {
+			isa = PBXGroup;
+			children = (
+				C9711E281F5A75CB00DBF923 /* LZ78.cpp */,
+				C9711E291F5A75CB00DBF923 /* LZ78.hpp */,
+				C9711E401F5A8DF400DBF923 /* main.cpp */,
+			);
+			name = LZ78;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +132,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9711E211F5A751F00DBF923 /* main.cpp in Sources */,
+				C9711E411F5A8DF400DBF923 /* main.cpp in Sources */,
+				C9711E2A1F5A75CB00DBF923 /* LZ78.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +262,7 @@
 				C9711E261F5A751F00DBF923 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -32,6 +32,7 @@ string* Grammar::product() {
     int64_t currentSymbol;
     while (stack->size()) {
         currentSymbol = stack->back();
+        stack->pop_back();
         if (currentSymbol < 0) {
             result->append(&this->alph->at(currentSymbol));
             continue;
@@ -42,5 +43,16 @@ string* Grammar::product() {
     }
     delete stack;
     return result;
+}
+
+int64_t Grammar::findRule(int64_t lhs, int64_t rhs) {
+    Rule* rule;
+    for (size_t ruleIdx = 0; ruleIdx < this->rules->size(); ++ruleIdx) {
+        rule = this->rules->at(ruleIdx);
+        if ((rule->product[0] == lhs) && (rule->product[1] == rhs)) {
+            return ruleIdx;
+        }
+    }
+    return -1;
 }
 

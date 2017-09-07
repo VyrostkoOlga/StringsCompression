@@ -14,6 +14,9 @@
 
 class Rule {
 public:
+    Rule();
+    Rule(int64_t, int64_t);
+    
     int64_t product[2];
     
     bool operator ==(const Rule &rhs);

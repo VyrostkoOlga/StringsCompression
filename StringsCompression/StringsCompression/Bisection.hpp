@@ -10,11 +10,12 @@
 #define Bisection_hpp
 
 #include <stdio.h>
-#include <vector>
-#include "Rule.hpp"
+#include <string>
+#include "Grammar.hpp"
 
 class Bisection {
-    
+public:
+    static Grammar* createGrammar(std::string* input);
 };
 
 #endif /* Bisection_hpp */

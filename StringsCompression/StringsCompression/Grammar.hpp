@@ -22,6 +22,8 @@ public:
     
     Grammar();
     ~Grammar();
+    
+    int64_t findRule(int64_t lhs, int64_t rhs);
 };
 
 #endif /* Grammar_hpp */

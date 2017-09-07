@@ -13,17 +13,17 @@ using namespace std;
 
 Grammar* Bisection::createGrammar(std::string *input) {
     Grammar* result = new Grammar();
-    
-    vector<string*>* stack = new vector<string*>();
-    stack->push_back(input);
-    
-    string* currentStr;
-    while (stack->size()) {
-        currentStr = stack->back();
-        stack->pop_back();
-        
-        if (currentStr->size() == 2) {
+    return result;
+}
+
+int64_t Bisection::addRuleToGrammar(std::string* input, Grammar* grammar) {
+    size_t length = input->size();
+    switch (length) {
+        case 1:
+            <#statements#>
+            break;
             
-        }
+        default:
+            break;
     }
 }

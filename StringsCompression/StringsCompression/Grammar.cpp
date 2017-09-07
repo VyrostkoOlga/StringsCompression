@@ -45,6 +45,24 @@ string* Grammar::product() {
     return result;
 }
 
+int64_t Grammar::addRule(int64_t lhs, int64_t rhs) {
+    int64_t existedRule = this->findRule(lhs, rhs);
+    if (existedRule >= 0) {
+        return existedRule;
+    }
+    this->rules->push_back(new Rule(lhs, rhs));
+    return this->rules->size() - 1;
+}
+
+int64_t Grammar::addSymbol(char symbol) {
+    int64_t existedSymbol = this->findSymbol(symbol);
+    if (existedSymbol < 0) {
+        return existedSymbol;
+    }
+    this->alph->push_back(symbol);
+    return -this->alph->size();
+}
+
 int64_t Grammar::findRule(int64_t lhs, int64_t rhs) {
     Rule* rule;
     for (size_t ruleIdx = 0; ruleIdx < this->rules->size(); ++ruleIdx) {
@@ -54,5 +72,14 @@ int64_t Grammar::findRule(int64_t lhs, int64_t rhs) {
         }
     }
     return -1;
+}
+
+int64_t Grammar::findSymbol(char symbol) {
+    for (size_t symbolIdx = 0; symbolIdx < this->alph->size(); ++symbolIdx) {
+        if (this->alph->at(symbolIdx) == symbol) {
+            return -symbolIdx - 1;
+        }
+    }
+    return 1;
 }
 

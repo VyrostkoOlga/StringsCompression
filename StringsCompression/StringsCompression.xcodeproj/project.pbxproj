@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C94C81FB1F61599000EBC82C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C94C81FA1F61599000EBC82C /* main.cpp */; };
 		C96D8C7D1F612E7700ABDC71 /* Bisection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C96D8C7B1F612E7700ABDC71 /* Bisection.cpp */; };
 		C96D8C811F612EAF00ABDC71 /* Rule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C96D8C7F1F612EAF00ABDC71 /* Rule.cpp */; };
 		C96D8C841F6133E500ABDC71 /* Grammar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C96D8C821F6133E500ABDC71 /* Grammar.cpp */; };
 		C9711E2A1F5A75CB00DBF923 /* LZ78.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9711E281F5A75CB00DBF923 /* LZ78.cpp */; };
-		C9711E411F5A8DF400DBF923 /* main-LZ78.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9711E401F5A8DF400DBF923 /* main-LZ78.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +27,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C94C81FA1F61599000EBC82C /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		C96D8C7B1F612E7700ABDC71 /* Bisection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bisection.cpp; sourceTree = "<group>"; };
 		C96D8C7C1F612E7700ABDC71 /* Bisection.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Bisection.hpp; sourceTree = "<group>"; };
 		C96D8C7F1F612EAF00ABDC71 /* Rule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Rule.cpp; sourceTree = "<group>"; };
@@ -55,6 +56,7 @@
 			children = (
 				C96D8C7B1F612E7700ABDC71 /* Bisection.cpp */,
 				C96D8C7C1F612E7700ABDC71 /* Bisection.hpp */,
+				C94C81FA1F61599000EBC82C /* main.cpp */,
 			);
 			name = Bisection;
 			sourceTree = "<group>";
@@ -164,7 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C96D8C841F6133E500ABDC71 /* Grammar.cpp in Sources */,
-				C9711E411F5A8DF400DBF923 /* main-LZ78.cpp in Sources */,
+				C94C81FB1F61599000EBC82C /* main.cpp in Sources */,
 				C96D8C811F612EAF00ABDC71 /* Rule.cpp in Sources */,
 				C9711E2A1F5A75CB00DBF923 /* LZ78.cpp in Sources */,
 				C96D8C7D1F612E7700ABDC71 /* Bisection.cpp in Sources */,

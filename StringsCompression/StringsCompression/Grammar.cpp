@@ -11,6 +11,7 @@
 using namespace std;
 
 Grammar::Grammar() {
+    this->axiom = -1;
     this->alph = new vector<char>();
     this->rules = new vector<Rule*>();
 }
@@ -20,13 +21,17 @@ Grammar::~Grammar() {
     delete this->rules;
 }
 
+char Grammar::symbolForMark(int64_t mark) {
+    return this->alph->at(-mark - 1);
+}
+
 string* Grammar::product() {
     if (!this->rules->size()) {
         return new string();
     }
     
     vector<int64_t>* stack = new vector<int64_t>();
-    stack->push_back(0);
+    stack->push_back(this->axiom);
     
     string* result = new string();
     int64_t currentSymbol;
@@ -34,12 +39,14 @@ string* Grammar::product() {
         currentSymbol = stack->back();
         stack->pop_back();
         if (currentSymbol < 0) {
-            result->append(&this->alph->at(currentSymbol));
+            // has reached the terminal
+            result->append(1, this->symbolForMark(currentSymbol));
             continue;
         }
+        // nonterminal, need to product, from left to right
         Rule* currentRule = this->rules->at(currentSymbol);
-        stack->push_back(currentRule->product[0]);
         stack->push_back(currentRule->product[1]);
+        stack->push_back(currentRule->product[0]);
     }
     delete stack;
     return result;
@@ -60,7 +67,7 @@ int64_t Grammar::addSymbol(char symbol) {
         return existedSymbol;
     }
     this->alph->push_back(symbol);
-    return -this->alph->size();
+    return -(this->alph->size());
 }
 
 int64_t Grammar::findRule(int64_t lhs, int64_t rhs) {

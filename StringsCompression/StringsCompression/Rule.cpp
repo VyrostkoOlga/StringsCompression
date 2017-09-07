@@ -10,7 +10,7 @@
 
 Rule::Rule(int64_t lhs, int64_t rhs) {
     this->product[0] = lhs;
-    this->product[0] = rhs;
+    this->product[1] = rhs;
 }
 
 bool Rule::operator==(const Rule &rhs) {

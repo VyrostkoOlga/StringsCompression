@@ -16,12 +16,18 @@
 
 class Grammar {
 public:
+    uint64_t axiom;
     std::vector<char>* alph;
     std::vector<Rule*>* rules;
-    std::string* product();
     
     Grammar();
     ~Grammar();
+    
+    // products the string using grammar's rules
+    std::string* product();
+    // returns the symbol of the alphabet
+    // connected with the mark
+    char symbolForMark(int64_t mark);
     
     // adds a new rule for left and right parts of product to a grammar
     // and returns the symbol for it or just returns the symbol for

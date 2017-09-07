@@ -15,9 +15,9 @@
 
 class Bisection {
 public:
-    static Grammar* createGrammar(std::string* input);
+    Grammar* createGrammar(std::string* input);
 private:
-    static int64_t addRuleToGrammar(std::string* input, Grammar* grammar);
+    int64_t addRuleToGrammar(std::string* input, size_t start, size_t end, Grammar* grammar);
 };
 
 #endif /* Bisection_hpp */

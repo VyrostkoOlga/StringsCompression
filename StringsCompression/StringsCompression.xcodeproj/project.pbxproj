@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C96D8C7D1F612E7700ABDC71 /* Bisection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C96D8C7B1F612E7700ABDC71 /* Bisection.cpp */; };
+		C96D8C811F612EAF00ABDC71 /* Rule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C96D8C7F1F612EAF00ABDC71 /* Rule.cpp */; };
+		C96D8C841F6133E500ABDC71 /* Grammar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C96D8C821F6133E500ABDC71 /* Grammar.cpp */; };
 		C9711E2A1F5A75CB00DBF923 /* LZ78.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9711E281F5A75CB00DBF923 /* LZ78.cpp */; };
 		C9711E411F5A8DF400DBF923 /* main-LZ78.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9711E401F5A8DF400DBF923 /* main-LZ78.cpp */; };
 /* End PBXBuildFile section */
@@ -24,6 +27,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C96D8C7B1F612E7700ABDC71 /* Bisection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bisection.cpp; sourceTree = "<group>"; };
+		C96D8C7C1F612E7700ABDC71 /* Bisection.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Bisection.hpp; sourceTree = "<group>"; };
+		C96D8C7F1F612EAF00ABDC71 /* Rule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Rule.cpp; sourceTree = "<group>"; };
+		C96D8C801F612EAF00ABDC71 /* Rule.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Rule.hpp; sourceTree = "<group>"; };
+		C96D8C821F6133E500ABDC71 /* Grammar.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Grammar.cpp; sourceTree = "<group>"; };
+		C96D8C831F6133E500ABDC71 /* Grammar.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Grammar.hpp; sourceTree = "<group>"; };
 		C9711E1D1F5A751F00DBF923 /* StringsCompression */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StringsCompression; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9711E281F5A75CB00DBF923 /* LZ78.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LZ78.cpp; sourceTree = "<group>"; };
 		C9711E291F5A75CB00DBF923 /* LZ78.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LZ78.hpp; sourceTree = "<group>"; };
@@ -41,6 +50,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C96D8C7A1F612E4C00ABDC71 /* Bisection */ = {
+			isa = PBXGroup;
+			children = (
+				C96D8C7B1F612E7700ABDC71 /* Bisection.cpp */,
+				C96D8C7C1F612E7700ABDC71 /* Bisection.hpp */,
+			);
+			name = Bisection;
+			sourceTree = "<group>";
+		};
+		C96D8C7E1F612E9B00ABDC71 /* Structures */ = {
+			isa = PBXGroup;
+			children = (
+				C96D8C7F1F612EAF00ABDC71 /* Rule.cpp */,
+				C96D8C801F612EAF00ABDC71 /* Rule.hpp */,
+				C96D8C821F6133E500ABDC71 /* Grammar.cpp */,
+				C96D8C831F6133E500ABDC71 /* Grammar.hpp */,
+			);
+			name = Structures;
+			sourceTree = "<group>";
+		};
 		C9711E141F5A751F00DBF923 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +89,8 @@
 		C9711E1F1F5A751F00DBF923 /* StringsCompression */ = {
 			isa = PBXGroup;
 			children = (
+				C96D8C7E1F612E9B00ABDC71 /* Structures */,
+				C96D8C7A1F612E4C00ABDC71 /* Bisection */,
 				C9711E271F5A75AF00DBF923 /* LZ78 */,
 			);
 			path = StringsCompression;
@@ -132,8 +163,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C96D8C841F6133E500ABDC71 /* Grammar.cpp in Sources */,
 				C9711E411F5A8DF400DBF923 /* main-LZ78.cpp in Sources */,
+				C96D8C811F612EAF00ABDC71 /* Rule.cpp in Sources */,
 				C9711E2A1F5A75CB00DBF923 /* LZ78.cpp in Sources */,
+				C96D8C7D1F612E7700ABDC71 /* Bisection.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

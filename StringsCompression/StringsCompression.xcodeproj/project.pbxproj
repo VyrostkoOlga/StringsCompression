@@ -51,6 +51,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C92093F61F655F4900F1E7AC /* M1 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = M1;
+			sourceTree = "<group>";
+		};
 		C96D8C7A1F612E4C00ABDC71 /* Bisection */ = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +98,7 @@
 		C9711E1F1F5A751F00DBF923 /* StringsCompression */ = {
 			isa = PBXGroup;
 			children = (
+				C92093F61F655F4900F1E7AC /* M1 */,
 				C96D8C7E1F612E9B00ABDC71 /* Structures */,
 				C96D8C7A1F612E4C00ABDC71 /* Bisection */,
 				C9711E271F5A75AF00DBF923 /* LZ78 */,
